@@ -16,3 +16,10 @@ The search also implements a sort of backtrack that is used to detect the situat
 This algorithm is much more memory consuming and does not guarantee the solution to be the one with the lowest number of steps.
 
 ## Approach 3 (*A-star problem*)
+This approach implements an A-star algorithm where the cost *f(n) = g(n) + h(n)* is based on the number of moves to reach the current state (*g(n)*) and the Manhattan distance with respect to the final solution (*h(n)*).<br>
+This algorithm guarantees a faster execution and a much lower memory usage but the provided solution is often not optimal. 
+<br>
+<br>
+<br>
+
+**WARNING**: Both detph-first and breadth-first algorithm become highly memory consuming when solving problems with dimension greater or equal to 4, leading the execution to an unexpected crash. Moreover, the depth-first search works for problems with dimension 3 but requires a long execution time.
